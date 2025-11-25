@@ -30,7 +30,7 @@ Tài liệu xác định các **Use Case** mà hệ thống Hydra Perp DEX cung 
 
 ## 3. Biểu đồ Use Case tổng thể
 
-```mermaidjs
+```mermaid
 flowchart TB
     Trader --> UC1["UC1: Open Position"]
     Trader --> UC2["UC2: Close Position"]
@@ -41,21 +41,21 @@ flowchart TB
 
 ---
 
-```mermaidjs
+```mermaid
 flowchart TB
     LP --> UC5["UC5: Add Liquidity"]
     LP --> UC6["UC6: Remove Liquidity"]
     LP --> UC7["UC7: View Pool Stats"]
 ```
 
-```mermaidjs
+```mermaid
 flowchart TB
     Bot --> UC8["UC8: Auto Close"]
     Bot --> UC9["UC9: Liquidation"]
     Bot --> UC10["UC10: Update Funding"]
 ```
 
-```mermaidjs
+```mermaid
 flowchart TB
     Admin --> UC11["UC11: Monitor System"]
     Oracle --> UC8
@@ -83,7 +83,7 @@ flowchart TB
 
 ## 5. Quan hệ Use Case (Include / Extend)
 
-```mermaidjs
+```mermaid
 flowchart LR
     UC1 --> UC4
     UC2 --> UC8
@@ -99,7 +99,7 @@ flowchart LR
 
 ## 6. Mối liên hệ Actor ↔ Use Case
 
-```mermaidjs
+```mermaid
 flowchart TB
     subgraph Traders
         A1[Open Position]
@@ -114,7 +114,7 @@ flowchart TB
 
 ---
 
-```mermaidjs
+```mermaid
 flowchart TB
     subgraph Liquidity_Providers
         B1[Add Liquidity]
@@ -124,7 +124,7 @@ flowchart TB
     LP --> B1 & B2 & B3
 ```
 
-```mermaidjs
+```mermaid
 flowchart TB
     subgraph Bot_System
         C1[Auto Close]
@@ -135,7 +135,7 @@ flowchart TB
     Bot --> C1 & C2 & C3
 ```
 
-```mermaidjs
+```mermaid
 flowchart TB
     subgraph Bot_System
         C1[Auto Close]

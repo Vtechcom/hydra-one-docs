@@ -141,7 +141,7 @@ Hydra One là **sàn giao dịch phái sinh phi tập trung (Perpetual DEX)** ho
 
 ### 9.1 Trader Flow
 
-```mermaidjs
+```mermaid
 flowchart TB
     A["Kết nối ví - Deposit Token vào Head Hydra"] --> B[Chọn Token giao dịch]
     B --> C[Nhập Collateral, Leverage, TP/SL...]
@@ -154,7 +154,7 @@ flowchart TB
 
 ### 9.2 Provider Flow
 
-```mermaidjs
+```mermaid
 flowchart TB
 
     X["Kết nối ví - Deposit Token vào Head Hydra"] --> Y[Chọn Pool Liquid Token] --> A
@@ -165,7 +165,7 @@ flowchart TB
 
 ### 9.3 Bot Flow
 
-```mermaidjs
+```mermaid
 flowchart TD
     Start((Bắt đầu)) --> Scan[Quét SC Orders]
     Scan --> Type{Phân loại lệnh}

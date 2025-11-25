@@ -53,7 +53,7 @@ Tài liệu này là nền tảng để đội kỹ thuật xây dựng **Smart 
 ### **Sequence Diagram**
 
 
-```mermaidjs
+```mermaid
 sequenceDiagram
     participant Trader
     participant Orders as Smart Contract Orders
@@ -92,7 +92,7 @@ sequenceDiagram
 
 ### **Sequence Diagram**
 
-```mermaidjs
+```mermaid
 sequenceDiagram
     participant Trader
     participant Orders as Smart Contract Orders
@@ -129,7 +129,7 @@ sequenceDiagram
 
 ### **Sequence Diagram**
 
-```mermaidjs
+```mermaid
 sequenceDiagram
     participant Trader
     participant Bot as Bot Hệ Thống
@@ -167,7 +167,7 @@ sequenceDiagram
 
 ### **Sequence Diagram**
 
-```mermaidjs
+```mermaid
 sequenceDiagram
     participant Bot as Bot Hệ Thống
     participant Manager as Smart Contract Manager Position
@@ -203,7 +203,7 @@ sequenceDiagram
 
 ### **Sequence Diagram**
 
-```mermaidjs
+```mermaid
 sequenceDiagram
     participant Provider
     participant Orders as Smart Contract Orders
@@ -237,7 +237,7 @@ sequenceDiagram
 
 ### **Sequence Diagram**
 
-```mermaidjs
+```mermaid
 sequenceDiagram
     participant Provider
     participant Orders as Smart Contract Orders

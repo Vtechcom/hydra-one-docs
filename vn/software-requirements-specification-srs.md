@@ -60,7 +60,7 @@ Sản phẩm bao gồm:
 
 ### 2.2 Mô hình kiến trúc tổng thể
 
-```mermaidjs
+```mermaid
 flowchart TB 
     subgraph Cardano_Layer_1["Cardano Layer (Main layer)"]
         User_Wallet["Deposit/Withdraw"]
@@ -304,7 +304,7 @@ pub type PoolDatum {
 
 ## 8. **Luồng giao dịch tổng thể**
 
-```mermaidjs
+```mermaid
 sequenceDiagram
     participant Trader
     participant Orders
@@ -315,7 +315,7 @@ sequenceDiagram
     Trader->>Orders: Tx1 – Gửi yêu cầu mở vị thế
     Orders-->>Bot: Bot đọc UTxO
     Bot->>Manager: Tạo PositionDatum mới
-    Bot->>Pool: Chuyển Collateral + cập nhật Funding
+    Bot->>Pool: Chuyển Collateral + cập nhật Pool
     Manager-->>Trader: Xác nhận mở vị thế
 ```
 
