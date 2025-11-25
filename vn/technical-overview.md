@@ -14,7 +14,9 @@
 
 ## **2.** Giới thiệu Hydra One
 
-Hydra One là một nền tảng giao dịch phái sinh dạng Perpetuals được xây dựng trực tiếp trên Hydra – giải pháp mở rộng Layer 2 của Cardano.\nBằng cách tận dụng khả năng xử lý giao dịch tức thời với chi phí gần bằng 0 của Hydra, Hydra One mang đến trải nghiệm giao dịch vượt trội, minh bạch on-chain nhưng tốc độ ngang Centralized Exchange. Dự án này đặt mục tiêu trở thành minh chứng (real-world demonstration) mạnh mẽ nhất về khả năng ứng dụng của Hydra trong lĩnh vực tài chính phi tập trung.
+Hydra One là một nền tảng giao dịch phái sinh dạng Perpetuals được xây dựng trực tiếp trên Hydra – giải pháp mở rộng Layer 2 của Cardano.
+
+Bằng cách tận dụng khả năng xử lý giao dịch tức thời với chi phí gần bằng 0 của Hydra, Hydra One mang đến trải nghiệm giao dịch vượt trội, minh bạch on-chain nhưng tốc độ ngang Centralized Exchange. Dự án này đặt mục tiêu trở thành minh chứng (real-world demonstration) mạnh mẽ nhất về khả năng ứng dụng của Hydra trong lĩnh vực tài chính phi tập trung.
 
 
 ---
@@ -33,7 +35,9 @@ Các sàn Perpetuals trên Cardano Layer 1 đang gặp nhiều giới hạn:
 * Trader thường xuyên mở/đóng vị thế.
 * Nhà cung cấp thanh khoản muốn tối ưu doanh thu từ phí giao dịch.
 
-**Tại sao quan trọng:**\nNếu Cardano muốn mở rộng thị trường DeFi, cần có những ứng dụng thể hiện rõ tính vượt trội về tốc độ, chi phí và độ tin cậy. Hydra là giải pháp mạnh mẽ nhưng hiện chưa có sản phẩm thực tế nào chứng minh tiềm năng của nó. Hydra One chính là mảnh ghép chiến lược trong quá trình này.
+**Tại sao quan trọng:**
+
+Nếu Cardano muốn mở rộng thị trường DeFi, cần có những ứng dụng thể hiện rõ tính vượt trội về tốc độ, chi phí và độ tin cậy. Hydra là giải pháp mạnh mẽ nhưng hiện chưa có sản phẩm thực tế nào chứng minh tiềm năng của nó. Hydra One chính là mảnh ghép chiến lược trong quá trình này.
 
 
 ---

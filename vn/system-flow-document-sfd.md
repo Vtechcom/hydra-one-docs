@@ -46,7 +46,13 @@ Tài liệu này là nền tảng để đội kỹ thuật xây dựng **Smart 
 ### **Tx2 – Bot xử lý yêu cầu**
 
 * Bot quét Orders theo **FIFO**.
-* Bot chuyển:\n✔ Position Token → SC Manager Position\n✔ Collateral → SC Pool\n✔ 2.5 ADA (logic SC yêu cầu) → SC Manager Position
+* Bot chuyển:
+
+✔ Position Token → SC Manager Position
+
+✔ Collateral → SC Pool
+
+✔ 2.5 ADA (logic SC yêu cầu) → SC Manager Position
 * Manager Position tạo **vị thế mới**.
 * Pool cập nhật **tổng thanh khoản**.
 

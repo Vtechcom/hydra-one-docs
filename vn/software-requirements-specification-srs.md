@@ -4,7 +4,9 @@
 
 ### 1.1 Mục tiêu tài liệu
 
-Tài liệu SRS này mô tả chi tiết **các yêu cầu phần mềm** của dự án Hydra One – sàn giao dịch phái sinh phi tập trung hoạt động trên **Hydra Layer-2 của Cardano**.\nNó được sử dụng bởi:
+Tài liệu SRS này mô tả chi tiết **các yêu cầu phần mềm** của dự án Hydra One – sàn giao dịch phái sinh phi tập trung hoạt động trên **Hydra Layer-2 của Cardano**.
+
+Nó được sử dụng bởi:
 
 * Nhà đầu tư & đối tác (hiểu rõ mô hình sản phẩm & tiềm năng thị trường).
 * Đội phát triển kỹ thuật (tham chiếu cho thiết kế, lập trình, và test).
@@ -117,12 +119,16 @@ flowchart TB
 
 ### FR-01. Mở vị thế (Open Position)
 
-**Mô tả:** Trader tạo lệnh mở vị thế Long hoặc Short với mức đòn bẩy, TP/SL tùy chọn.\n**Quy trình:**
+**Mô tả:** Trader tạo lệnh mở vị thế Long hoặc Short với mức đòn bẩy, TP/SL tùy chọn.
+
+**Quy trình:**
 
 
 1. Trader tạo **Tx1** gửi đến Smart Contract Orders (lưu UTxO + datum).
 2. Bot đọc yêu cầu → tạo **Tx2** mở vị thế trên Manager Position.
-3. Chuyển collateral vào Pool → ghi nhận vị thế mới.\n**Kết quả:**
+3. Chuyển collateral vào Pool → ghi nhận vị thế mới.
+
+**Kết quả:**
 
 * Một `PositionDatum` mới được tạo.
 * Trader nhận thông báo mở vị thế thành công.
@@ -132,11 +138,15 @@ flowchart TB
 
 ### FR-02. Đóng vị thế (Close Position)
 
-**Mô tả:** Trader yêu cầu đóng vị thế hiện có.\n**Quy trình:**
+**Mô tả:** Trader yêu cầu đóng vị thế hiện có.
+
+**Quy trình:**
 
 
 1. Tx1 – Trader gửi yêu cầu đóng vị thế.
-2. Tx2 – Bot burn token vị thế, chuyển tiền (gốc + PnL) về ví Trader.\n**Điều kiện:**
+2. Tx2 – Bot burn token vị thế, chuyển tiền (gốc + PnL) về ví Trader.
+
+**Điều kiện:**
 
 * Chỉ đóng khi trạng thái `Opened`.
 * Bot xác thực chữ ký hợp lệ.
@@ -146,7 +156,11 @@ flowchart TB
 
 ### FR-03. Tự động đóng vị thế (Take Profit / Stop Loss)
 
-**Mô tả:** Bot theo dõi giá Oracle và tự động đóng vị thế đạt TP/SL.\n**Tần suất:** 2 giây / lần kiểm tra.\n**Kết quả:**
+**Mô tả:** Bot theo dõi giá Oracle và tự động đóng vị thế đạt TP/SL.
+
+**Tần suất:** 2 giây / lần kiểm tra.
+
+**Kết quả:**
 
 * Bot tạo lệnh đóng → burn token → chuyển tiền → cập nhật pool.
 
@@ -155,7 +169,9 @@ flowchart TB
 
 ### FR-04. Thanh lý (Liquidation)
 
-**Mô tả:** Khi giá giảm tới ngưỡng thanh lý, Bot tự động đóng vị thế và thu hồi collateral còn lại.\n**Kết quả:**
+**Mô tả:** Khi giá giảm tới ngưỡng thanh lý, Bot tự động đóng vị thế và thu hồi collateral còn lại.
+
+**Kết quả:**
 
 * Vị thế chuyển sang trạng thái `Liquidated`.
 * Pool cập nhật dữ liệu mới.
@@ -168,7 +184,9 @@ flowchart TB
 **Mô tả:**
 
 * LP gửi yêu cầu Add/Withdraw Liquidity (Tx1).
-* Bot thực hiện Add/Withdraw (Tx2), mint/burn LP Token.\n**Kết quả:**
+* Bot thực hiện Add/Withdraw (Tx2), mint/burn LP Token.
+
+**Kết quả:**
 * Cập nhật tổng thanh khoản (`total_liquidity`).
 * Cập nhật danh mục LP của từng người.
 
@@ -177,10 +195,20 @@ flowchart TB
 
 ### FR-06. Cập nhật phí vay theo giờ
 
-**Mô tả:** Bot hệ thống sẽ tự động tính toán **phí vay theo giờ (funding rate)** sau mỗi 1 giờ dựa trên tương quan giữa **tổng vị thế Long và Short** đang mở trong hệ thống.\nMục tiêu của funding rate là **giữ cân bằng thị trường**, đảm bảo tổng giá trị Long và Short không chênh lệch quá lớn.\nFunding rate được xác định như sau:
+**Mô tả:** Bot hệ thống sẽ tự động tính toán **phí vay theo giờ (funding rate)** sau mỗi 1 giờ dựa trên tương quan giữa **tổng vị thế Long và Short** đang mở trong hệ thống.
 
-* **Khi tỷ lệ Long/Short là 50/50**\n→ Phí vay = **một tham số chuẩn (base funding rate)** được thiết lập trước trong Smart Contract (có thể kiểm chứng công khai).
-* **Khi tỷ lệ Long/Short lệch khỏi 50/50**\n→ Phí vay sẽ **tăng hoặc giảm** tương ứng với mức độ lệch.\n→ Bên đang đông hơn sẽ phải trả phí cao hơn.
+Mục tiêu của funding rate là **giữ cân bằng thị trường**, đảm bảo tổng giá trị Long và Short không chênh lệch quá lớn.
+
+Funding rate được xác định như sau:
+
+* **Khi tỷ lệ Long/Short là 50/50**
+
+→ Phí vay = **một tham số chuẩn (base funding rate)** được thiết lập trước trong Smart Contract (có thể kiểm chứng công khai).
+* **Khi tỷ lệ Long/Short lệch khỏi 50/50**
+
+→ Phí vay sẽ **tăng hoặc giảm** tương ứng với mức độ lệch.
+
+→ Bên đang đông hơn sẽ phải trả phí cao hơn.
 
 Smart Contract sẽ ghi nhận funding rate mới vào PoolDatum và sử dụng để cập nhật PnL của từng vị thế.
 
