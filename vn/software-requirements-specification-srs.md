@@ -364,5 +364,3 @@ Hydra One là giải pháp tiên phong **kết hợp hiệu năng Hydra Layer-2 
 * **Hiệu suất ngang CEX, minh bạch phi tập trung.**
 * **Phí gần như bằng 0, xác nhận tức thì.**
 * **Cấu trúc mô-đun mở rộng dễ dàng.**
-
-  > \
