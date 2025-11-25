@@ -1,3 +1,5 @@
+# UI Screenshots & Feature Showcase
+
 # 1. Mục tiêu tài liệu
 
 Tài liệu này cung cấp **các màn hình giao diện chính** của Hydra One nhằm minh họa rõ ràng:
@@ -18,30 +20,29 @@ Tài liệu này cung cấp **các màn hình giao diện chính** của Hydra O
 * Cung cấp cái nhìn tổng quan về thị trường và các cặp giao dịch phổ biến.
 * Hiển thị thống kê pool, funding rate, volume.
 
-  
+  \
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=b8fb8c32-b502-448b-9b6e-d46d788db67f " =1915x886")
+ ![](attachments/b8fb8c32-b502-448b-9b6e-d46d788db67f.png " =1915x886")
 
 
 ---
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=3a6b2768-32fc-44d6-b73d-ddd5b469d704 " =864x266")
+ ![](attachments/3a6b2768-32fc-44d6-b73d-ddd5b469d704.png " =864x266")
 
 # 3. **Màn hình Kết nối ví (Wallet Connect)**
 
-**Mục đích:**
-Cho phép người dùng kết nối ví (Nami / Eternl / Lace) Hoặc login bằng Email để thực hiện giao dịch.
+**Mục đích:**\nCho phép người dùng kết nối ví (Nami / Eternl / Lace) Hoặc login bằng Email để thực hiện giao dịch.
 
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=719b6785-c644-4c7b-ac5e-cee4254e3e56 " =564x467")
+ ![](attachments/719b6785-c644-4c7b-ac5e-cee4254e3e56.png " =564x467")
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=65b37b44-a3bb-4133-af49-09fc2cbe0f3b " =556x795")
-
-
- ![Deposit from Layer1 to Head hydra(Layer 2)](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=970d609b-4495-4221-a366-eb13a777a43f " =454x357")
+ ![](attachments/65b37b44-a3bb-4133-af49-09fc2cbe0f3b.png " =556x795")
 
 
- ![Withdraw From Head Hydra(Layer2) to Layer1](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=24789d4a-c890-46d7-aed5-6db46f45d7df " =476x375")
+ ![Deposit from Layer1 to Head hydra(Layer 2)](attachments/970d609b-4495-4221-a366-eb13a777a43f.png " =454x357")
+
+
+ ![Withdraw From Head Hydra(Layer2) to Layer1](attachments/24789d4a-c890-46d7-aed5-6db46f45d7df.png " =476x375")
 
 # 4. **Màn hình Giao dịch Perpetual (Trading Screen)**
 
@@ -53,15 +54,14 @@ Cho phép người dùng kết nối ví (Nami / Eternl / Lace) Hoặc login b�
 * Orderbook hoặc giá đánh dấu
 * Danh sách cặp giao dịch (ADA/USD, BTC/USD, v.v.)
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=556907eb-0fcb-4818-95ab-9c03559b6c4b " =1505x637")
+ ![](attachments/556907eb-0fcb-4818-95ab-9c03559b6c4b.png " =1505x637")
 
 
 ---
 
 ## 4.2 Form mở vị thế (Open Long / Short)
 
-**Mục đích:**
-Trader nhập thông số để mở vị thế.
+**Mục đích:**\nTrader nhập thông số để mở vị thế.
 
 **Mô tả chi tiết form:**
 
@@ -74,10 +74,10 @@ Trader nhập thông số để mở vị thế.
 * Entry Price dự kiến
 * Liquidation Price dự kiến
 
- ![Long Market](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=3424054a-9f91-4afb-bfdb-1bf5ca892e54 " =412x759")
+ ![Long Market](attachments/3424054a-9f91-4afb-bfdb-1bf5ca892e54.png " =412x759")
 
 
- ![Long Limit](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=ba6e344c-3049-4ba5-b3c9-25533342c396 " =407x764")
+ ![Long Limit](attachments/ba6e344c-3049-4ba5-b3c9-25533342c396.png " =407x764")
 
 
 ---
@@ -96,17 +96,17 @@ Trader nhập thông số để mở vị thế.
 * PnL (real-time)
 * Funding Fee
 * TP/SL đang áp dụng
-* Nút “Close Position”
-* Nút “Edit TP/SL”
+* Nút "Close Position"
+* Nút "Edit TP/SL"
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=9cd311eb-729f-49fe-a737-67b5fe4033e0 " =1494x280")
+ ![](attachments/9cd311eb-729f-49fe-a737-67b5fe4033e0.png " =1494x280")
 
 
 ---
 
 # 6. **Màn hình Đóng vị thế (Close Position)**
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=fd575c88-c6fb-421d-bbdd-1d22ed4624c0 " =1501x385")
+ ![](attachments/fd575c88-c6fb-421d-bbdd-1d22ed4624c0.png " =1501x385")
 
 
 ---
@@ -122,7 +122,7 @@ Trader nhập thông số để mở vị thế.
 * Timestamp
 * Giá trị lệnh
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=0c439b9e-8358-4419-bc44-03b1612dcdc4 " =1497x281")
+ ![](attachments/0c439b9e-8358-4419-bc44-03b1612dcdc4.png " =1497x281")
 
 
 ---
@@ -137,7 +137,7 @@ Trader nhập thông số để mở vị thế.
 * Tỷ suất lợi nhuận dự kiến
 * Phân bổ theo cặp
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=2fce01ae-b8ef-4163-a227-9d19a5f90abe " =1909x761")
+ ![](attachments/2fce01ae-b8ef-4163-a227-9d19a5f90abe.png " =1909x761")
 
 
 ---
@@ -150,7 +150,7 @@ Trader nhập thông số để mở vị thế.
 * Xem tỷ lệ chia
 * Dự đoán LP Token mint ra
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=e8b81b3e-5c46-48da-ba22-0f3ec57ea124 " =457x584")
+ ![](attachments/e8b81b3e-5c46-48da-ba22-0f3ec57ea124.png " =457x584")
 
 
 ---
@@ -162,4 +162,4 @@ Trader nhập thông số để mở vị thế.
 * Nhập số lượng LP Token muốn rút
 * Tính toán số tiền trả về
 
- ![](https://wiki.ada-defi.io.vn/api/attachments.redirect?id=eb854531-952d-484a-8f05-e0f964232602 " =459x578")
+ ![](attachments/eb854531-952d-484a-8f05-e0f964232602.png " =459x578")
