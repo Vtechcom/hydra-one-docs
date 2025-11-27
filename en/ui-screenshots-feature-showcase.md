@@ -31,7 +31,7 @@ Images will be added manually by the development team following the structure be
 
 # 3. **Wallet Connect Screen**
 
-**Purpose:** Cho phép người dùng kết nối ví (Nami / Eternl / Lace) Hoặc login bằng Email để thực hiện giao dịch.
+**Purpose:** Allow users to connect their wallets (Nami / Eternl / Lace) or log in with email to perform transactions.
 
 
  ![](../images/719b6785-c644-4c7b-ac5e-cee4254e3e56.png " =564x467")
@@ -60,13 +60,13 @@ Images will be added manually by the development team following the structure be
 
 ## 4.2 Open Position Form (Long / Short)
 
-**Purpose:** Trader nhập thông số để mở vị thế.
+**Purpose:** The trader enters parameters to open a position.
 
 **Form details:**
 
 * Select: Long / Short — Market / Limit
-* Enter Collateral
-* Choose Leverage
+* Enter Perp Value
+* Choose margin
 * Enter Take Profit
 * Enter Stop Loss
 * Estimated total cost
